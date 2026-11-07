@@ -1,0 +1,61 @@
+# Customer Churn Prediction Using Machine Learning
+
+## Project Overview
+Customer Churn Prediction is a machine learning project that predicts whether a customer is likely to leave a service or continue using it.
+
+The project uses Logistic Regression to classify customers into two categories: Churn (1) and Stay (0).
+
+## Objectives
+- Analyze customer information.
+- Identify customers who may leave a service.
+- Build a machine learning classification model.
+- Create a simple web application for predictions.
+
+## Technologies Used
+- Python
+- Google Colab
+- Pandas
+- Scikit-learn
+- Joblib
+- Gradio
+
+## Dataset Description
+The dataset contains 12 sample customer records with the following features:
+- Tenure months
+- Support tickets
+- Monthly spend (INR)
+- Last login days
+- Plan type
+- Churned (target variable)
+
+The dataset is synthetic and created for educational purposes.
+
+## Machine Learning Algorithm
+**Logistic Regression**
+
+The model predicts:
+- 0 – Customer is likely to stay.
+- 1 – Customer is likely to churn.
+
+## Model Performance
+- Test accuracy: 100%
+- Test records: 3
+
+Note: The dataset is very small, so this result does not establish real-world predictive performance.
+
+## Web Application
+A Gradio web application allows users to enter customer details and receive churn predictions.
+
+## Project Files
+- `customer_churn_dataset.csv` – Dataset
+- `customer_churn_model.pkl` – Trained model
+- Google Colab notebook – Project implementation
+
+## Conclusion
+This project demonstrates how machine learning can be used to predict customer churn and how a trained model can be integrated into a simple web application.
+
+## Future Enhancements
+- Use a larger real-world dataset.
+- Improve model performance through testing.
+- Compare multiple machine learning algorithms.
+- Deploy the application permanently.
