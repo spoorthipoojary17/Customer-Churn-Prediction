@@ -1,14 +1,14 @@
 # Customer Churn Prediction Using Machine Learning
 
 ## Project Overview
-This project predicts whether a customer is likely to leave a company using Machine Learning techniques.
+This project predicts whether a customer is likely to leave a company (churn) using Machine Learning techniques.
 
-## Objective
-To analyse customer data and predict customer churn using classification algorithms.
+The main goal is to identify customers who may stop using a service so that businesses can take steps to retain them.
 
 ## Dataset
-- Total customer records: 7,043
-- Features: Customer demographics, services, contract details and charges.
+- Dataset: Telco Customer Churn
+- Original records: 7,043
+- Records after data cleaning: 7,032
 - Target variable: Churn
 
 ## Technologies Used
@@ -21,33 +21,34 @@ To analyse customer data and predict customer churn using classification algorit
 - Scikit-learn
 - Joblib
 
-## Data Preprocessing
-- Checked missing values.
-- Converted TotalCharges into numeric format.
-- Removed missing records.
-- Applied One-Hot Encoding.
-- Split data into training and testing sets.
+## Project Workflow
+1. Data loading
+2. Data cleaning and preprocessing
+3. Exploratory Data Analysis (EDA)
+4. Handling missing values
+5. One-Hot Encoding
+6. Splitting data into training and testing sets
+7. Model training
+8. Model evaluation
 
 ## Machine Learning Algorithms
-1. Logistic Regression
-2. Random Forest Classifier
+- Logistic Regression
+- Random Forest Classifier
 
-## Model Performance
-Logistic Regression:
+## Model Results
+**Logistic Regression**
 - Accuracy: 80.31%
 - F1-score: 0.6071
 
-Random Forest:
+**Random Forest**
 - F1-score: 0.5604
 
-Logistic Regression achieved a higher F1-score in this experiment.
-
 ## Project Files
-- customer_churn_model.pkl – Saved trained model.
-- feature_names.json – Saved input feature names.
+- `customer_churn_model.pkl` – Trained Logistic Regression model
+- `feature_names.json` – Saved feature names
 
 ## Conclusion
-This project demonstrates how Machine Learning can be used to predict customer churn and help businesses understand customer retention.
+This project demonstrates how Machine Learning can be used to predict customer churn. Logistic Regression achieved an accuracy of approximately 80.31% on the test dataset.
 
 ## Developed By
 Spoorthi Poojary
