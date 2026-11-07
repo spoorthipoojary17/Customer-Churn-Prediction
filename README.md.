@@ -1,61 +1,53 @@
 # Customer Churn Prediction Using Machine Learning
 
 ## Project Overview
-Customer Churn Prediction is a machine learning project that predicts whether a customer is likely to leave a service or continue using it.
+This project predicts whether a customer is likely to leave a company using Machine Learning techniques.
 
-The project uses Logistic Regression to classify customers into two categories: Churn (1) and Stay (0).
+## Objective
+To analyse customer data and predict customer churn using classification algorithms.
 
-## Objectives
-- Analyze customer information.
-- Identify customers who may leave a service.
-- Build a machine learning classification model.
-- Create a simple web application for predictions.
+## Dataset
+- Total customer records: 7,043
+- Features: Customer demographics, services, contract details and charges.
+- Target variable: Churn
 
 ## Technologies Used
 - Python
 - Google Colab
 - Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 - Scikit-learn
 - Joblib
-- Gradio
 
-## Dataset Description
-The dataset contains 12 sample customer records with the following features:
-- Tenure months
-- Support tickets
-- Monthly spend (INR)
-- Last login days
-- Plan type
-- Churned (target variable)
+## Data Preprocessing
+- Checked missing values.
+- Converted TotalCharges into numeric format.
+- Removed missing records.
+- Applied One-Hot Encoding.
+- Split data into training and testing sets.
 
-The dataset is synthetic and created for educational purposes.
-
-## Machine Learning Algorithm
-**Logistic Regression**
-
-The model predicts:
-- 0 – Customer is likely to stay.
-- 1 – Customer is likely to churn.
+## Machine Learning Algorithms
+1. Logistic Regression
+2. Random Forest Classifier
 
 ## Model Performance
-- Test accuracy: 100%
-- Test records: 3
+Logistic Regression:
+- Accuracy: 80.31%
+- F1-score: 0.6071
 
-Note: The dataset is very small, so this result does not establish real-world predictive performance.
+Random Forest:
+- F1-score: 0.5604
 
-## Web Application
-A Gradio web application allows users to enter customer details and receive churn predictions.
+Logistic Regression achieved a higher F1-score in this experiment.
 
 ## Project Files
-- `customer_churn_dataset.csv` – Dataset
-- `customer_churn_model.pkl` – Trained model
-- Google Colab notebook – Project implementation
+- customer_churn_model.pkl – Saved trained model.
+- feature_names.json – Saved input feature names.
 
 ## Conclusion
-This project demonstrates how machine learning can be used to predict customer churn and how a trained model can be integrated into a simple web application.
+This project demonstrates how Machine Learning can be used to predict customer churn and help businesses understand customer retention.
 
-## Future Enhancements
-- Use a larger real-world dataset.
-- Improve model performance through testing.
-- Compare multiple machine learning algorithms.
-- Deploy the application permanently.
+## Developed By
+Spoorthi Poojary
